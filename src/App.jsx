@@ -1,18 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar';
-import Steps from './components/Steps';
-import Payment from './components/Payment/Payment';
-import Contact from './components/Contact';
+import AppRoutes from './Root/AppRoutes';
 
 function App() {
-    return(
-        <div className="min-h-screen bg-gray-100">
-        <Navbar/>
-        <Steps/>
-        <Payment/>
-        <Contact/>
-        </div>
-    )
+    return <AppRoutes />;
 }
 export default App
