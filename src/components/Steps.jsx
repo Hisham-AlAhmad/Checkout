@@ -1,7 +1,5 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom";
 function Steps() {
-  const navigate = useNavigate();
   const steps = [{ id: 1, label: "Order" },{ id: 2, label: "Contact" },{ id: 3, label: "Address" },{ id: 4, label: "Payment" },]
   const [activeStep, setActiveStep] = useState(1)
   return (
