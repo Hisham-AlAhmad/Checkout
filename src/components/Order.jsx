@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 function Order() {
-  const [items, setItems] = useState([{id: 1,name: "Premium Wireless Headphones",desc: "Noise-canceling,30hr battery",price: 299.99,},
-    {id: 2,name: "Leather Laptop Sleeve",desc: 'Fits up to 15" laptops',price: 179.99,},
-    {id: 3,name: "USB-C Hub Pro",desc: "7-in-1 connectivity",price: 59.99,},]);
+  const [items, setItems] = useState([{id: 1,name: "Premium Wireless Headphones",desc: "Noise-canceling,30hr battery",qty: 1,price: 299.99,},
+    {id: 2,name: "Leather Laptop Sleeve",desc: 'Fits up to 15" laptops',qty: 1,price: 179.99,},
+    {id: 3,name: "USB-C Hub Pro",desc: "7-in-1 connectivity",qty: 2,price: 59.99,},]);
   const shipping = 12.99;
   const tax = 40;
 
@@ -39,12 +39,7 @@ function Order() {
 
           <div className="flex flex-col justify-center items-center mr-4">
             <p>${(item.price * item.qty).toFixed(2)}</p>
-            <button
-              onClick={() => deleteItem(item.id)}
-              className="text-red-500 text-sm mt-2"
-            >
-              ✕
-            </button>
+            <button onClick={() => deleteItem(item.id)} className="text-red-500 text-sm mt-2">✕</button>
           </div>
         </div>
       ))}
