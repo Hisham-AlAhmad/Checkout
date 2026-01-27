@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Order() {
   const [items, setItems] = useState([{id: 1,name: "Premium Wireless Headphones",desc: "Noise-canceling,30hr battery",qty: 1,price: 299.99,},
@@ -65,9 +66,9 @@ function Order() {
       </div>
 
       <div className="flex items-center">
-        <button className="bg-[#14b8a5] text-white font-bold rounded-xl p-3 mt-6 w-full hover:bg-[#14b8a5]">
+        <Link to="/contact" className="bg-[#14b8a5] text-white font-bold rounded-xl p-3 mt-6 w-full hover:bg-[#14b8a5]">
           Proceed to Checkout <i className="ti ti-arrow-narrow-right"></i>
-        </button>
+        </Link>
       </div>
     </div>
   );
