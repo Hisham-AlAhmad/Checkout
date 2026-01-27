@@ -9,7 +9,7 @@ const Payment = () => {
     const [error, setError] = useState("");
 
     return (
-        <div className="mx-auto mt-16 max-w-lg rounded-2xl bg-white p-6 shadow-lg">
+        <div className="mx-auto mt-10 max-w-lg rounded-2xl bg-white p-6 shadow-lg">
 
             {/* Header */}
             <p className="mb-4 flex items-center font-bold">
