@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from '../components/Navbar';
 import Steps from '../components/Steps';
+import Address from '../components/Address';
 
 function Layout() {
   return (

@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import Payment from '../components/Payment/Payment';
 import Contact from '../components/Contact';
 import Order from "../components/Order";
+import Address from "../components/Address";
 
 function AppRoutes() {
   return (
@@ -10,6 +11,7 @@ function AppRoutes() {
       {/* User side routes */}
       <Route element={<Layout />} >
         <Route path="/" element={<Order />} />
+        <Route path="/address" element={<Address />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/contact" element={<Contact />} />
       </Route>

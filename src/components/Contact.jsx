@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Contact() {
 
   return (
@@ -23,8 +25,8 @@ function Contact() {
           <p className="text-[gray] pl-1">For delivery updates</p>
         </div>
         <div className="flex">
-          <button className="bg-[#f6f7f9] text-black font-bold rounded-xl p-3 mt-6 w-full hover:bg-[#14b8a5] mr-1">Back</button>
-          <button className="bg-[#14b8a5]  text-white font-bold rounded-xl p-3 mt-6 w-full hover:bg-[#14b8a5]">Continue to address</button>
+          <Link to="/" className="bg-[#f6f7f9] text-black font-bold rounded-xl p-3 mt-6 w-full hover:bg-[#14b8a5] mr-1">Back</Link>
+          <Link to="/address" className="bg-[#14b8a5]  text-white font-bold rounded-xl p-3 mt-6 w-full hover:bg-[#14b8a5]">Continue to address</Link>
         </div>
       </div>
 
