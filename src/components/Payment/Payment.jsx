@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import CreditCard from "./CreditCard";
 
 const Payment = () => {
     const navigate = useNavigate();
@@ -99,6 +100,10 @@ const Payment = () => {
                     <h1 className="font-bold text-xl">Payment Details</h1>
                     <p className="text-sm text-gray-500">Enter your payment information</p>
                 </div>
+            </div>
+
+            <div>
+                <CreditCard />
             </div>
 
             <form onSubmit={handleSubmit}>
