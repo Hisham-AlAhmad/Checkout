@@ -102,7 +102,7 @@ const Payment = () => {
                 </div>
             </div>
 
-            <div>
+            <div className="mb-6">
                 <CreditCard />
             </div>
 
@@ -124,7 +124,7 @@ const Payment = () => {
                         />
                         {errors.cardNumber && (
                             <span className="absolute right-3 top-1/2 -translate-y-1/2 text-red-500">
-                                ⚠
+                                <i className="ti ti-alert-circle" />
                             </span>
                         )}
                     </div>
